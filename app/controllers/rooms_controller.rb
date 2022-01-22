@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
 
   def index
-    @rooms = Room.all
+    @rooms = Room.public_rooms
     @room = Room.new
     @users = User.except_me(current_user)
   end
