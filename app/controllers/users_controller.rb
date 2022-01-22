@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @rooms = Room.all
+    @rooms = Room.public_rooms
     @users = User.except_me(current_user)
     @room = Room.new
     @message = Message.new
