@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+ .bg-dark {
+    color: white;
+}
+
+.msg-form {
+    position: fixed;
+    bottom: 0;
+    width: 90%
+}
+
+.col-md-10 {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.msg-content {
+    width: 80%;
+    margin-right: 5px;
+}
+
+.message-box {
+    width: fit-content;
+    max-width: 40%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #555 ;
+    padding: 10px
+}
