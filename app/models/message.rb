@@ -10,4 +10,7 @@ class Message < ApplicationRecord
       throw :abort unless is_participant
     end
   end
+  def date_format
+    self.created_at.strftime("%H:%M %d-%m-%Y")
+  end
 end
